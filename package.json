@@ -1,0 +1,21 @@
+{
+  "name": "foo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 8080",
+    "gcp-build": "npm run build",
+    "deploy": "gcloud config set project foo-project-281702 && gcloud app deploy app.yaml --version=0-1-0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "firebase": "^7.15.5",
+    "firebase-admin": "^8.12.1",
+    "js-cookie": "^2.2.1",
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
